@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+<title>Actualizar User :: SIGEC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Education Tutorial Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--bootstrap-->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!--coustom css-->
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<!--script-->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- js -->
+<script src="js/bootstrap.js"></script>
+<!-- /js -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic,400,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--/fonts-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!--script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<!--/script-->
+</head>
+	<body>
+<!--header-->
+		<div class="header" id="home">
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<h1><a class="navbar-brand" href="index.html">SIGEC<br /><span>AN HELP HAND FOR STUDENTS!</span></a></h1>
+					</div>
+                                        <br>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right margin-top cl-effect-2">
+								<li><a href="mensagem.html"><span data-hover="Mensagem">MENSAGEM</span></a></li>
+                                                                <li><a href="grupo_estudo.html"><span data-hover="Estudos">GRUPO DE ESTUDO</span></a></li>
+								<li><a href="gestaouser.html"><span data-hover="Utilizadores">UTILIZADOR</span></a></li>
+                                                                <!--li><a href="#"><span data-hover="Publicar">PUBLICAR</span></a></li-->
+								<li><a href="publicar.html"><span data-hover="Publicação">PUBLICAÇÃO</span></a></li>
+                                                                <li><a href="administrador.html"><span data-hover="Perfil">PERFIL</span></a></li>
+                                                        </ul>
+							<div class="clearfix"> </div>
+						</div><!-- /.navbar-collapse -->
+                                                <div class="login-pop">
+                                                    <div id="loginpop"><a id="loginButton" href="logout.php"><span data-hover="Logout">Sair</span></a>
+                                                        <div id="loginBox"></div>  
+                                                    </div>
+                                                </div>
+				</div>
+			</nav>
+<!--/script-->
+		   <div class="clearfix"> </div>
+</div>
+<!-- Top Navigation -->
+<div class="banner banner5">
+	<div class="container">
+	<h2>Actualizar um Utilizador</h2></div>
+</div>
+
+<!-- About -->
+<div class="about">
+    <div class="container">
+	<div class="about-info-grids">
+            <form action="actualizaruser.php" method="post">
+                <table border="0" width="55%" CELLPADDING="18" CELLSPACING="1" align="left"  valign="center">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Número Identificação</td>
+                        <td><input type="number" name="inscricao" value="" required="" autofocus=""/></td>
+                    </tr>
+                    <tr>
+                        <td>Nome Completo</td>
+                        <td><input type="text" name="nome" value="" required="" autofocus=""/></td>
+                    </tr>
+                    <tr>
+                        <td>Data de Nascimento</td>
+                        <td><input type="date" name="data_nasc" value="" required="" autofocus=""/></td>
+                    </tr>
+                    <tr>
+                        <td>Ano de Frequência</td> 
+                        <td><select name="frequencia" required="" autofocus="">   
+                                <option value="">Selecione</option> 
+                                <option value="1">Primeiro Ano</option> 
+                                <option value="2">Segundo Ano</option> 
+                                <option value="3">Terceiro Ano</option> 
+                                <option value="4">Quarto Ano</option> 
+                                <option value="5">Quinto Ano</option>  
+                            </select> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Área de Formação</td> 
+                        <td><select name="formacao" required="" autofocus="">   
+                                <option value="">Selecione</option> 
+                                <option value="1">Gestao</option> 
+                                <option value="2">Economia</option>
+                                <option value="3">Direito</option> 
+                                <option value="4">Contabilidade</option>
+                                <option value="5">Engenharia Producao Industrial</option> 
+                                <option value="6">Engenharia Mecanica</option> 
+                                <option value="7">Engenharia Ambiental</option> 
+                                <option value="8">Engenharia Construcao Civil</option> 
+                                <option value="9">Engenharia Electrotecnia</option> 
+                                <option value="10">Engenharia Quimica</option> 
+                                <option value="11">Engenharia Arquitectura</option> 
+                                <option value="12">Engenharia Informatica</option> 
+                                <option value="13">Ciencias da Computacao</option> 
+                                <option value="14">Matematica e Fisica</option> 
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Morada</td> 
+                        <td><input type="text" name="endereco" value="" required="" autofocus=""/></td>
+                    </tr>
+                    <tr>
+                        <td>Número Telefone 01</td> 
+                        <td><input type="text" name="telefone" value="" required="" autofocus=""/></td>
+                    </tr>
+                    <tr>
+                        <td>Número Telefone 02</td> 
+                        <td><input type="text" name="telefalt" value="" required="" autofocus=""/></td>
+                    </tr>
+                    <tr>
+                        <td>ID De Acesso</td> 
+                        <td><input type="text" name="id_acesso" value="" required="" autofocus=""/></td>
+                    </tr>
+                    <tr>
+                        <td>Senha</td> 
+                        <td><input type="password" name="senha" value="" required="" autofocus=""/></td>
+                    </tr>
+                    <!--tr>
+                        <td>foto</td> 
+                        <td><input type="file" name="foto" required="" autofocus=""/></td>
+                    </tr-->
+                    <!--tr>
+                        <td>E-mail</td>
+                        <td><input type="email" name="email" value="" required="" autofocus=""/></td>
+                    </tr-->
+                    <tr>
+                        <td>Tipo de Utilizador</td> 
+                        <td><select name="categoria" required="" autofocus="">   
+                                <option value="">Selecione</option> 
+                                <option value="1">Utilizador Comum</option> 
+                                <option value="2">Administrador</option> 
+                                <option value="3">Gestor</option> 
+                                <option value="4">Administrativos</option> 
+                                <option value="5">Funcionários</option> 
+                                <option value="6">Docente</option> 
+                                <option value="7">Estudante</option> 
+                            </select>
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td>CONFIRMAR</td>
+                        <td><input type="submit" name="cadastrar" value="cadastrar"/>
+                            <!--input type="reset" href="index.html" value="Cancelar" /--><a href="gestaouser.html">CANCELAR</a></td>
+                
+                   </tr>
+                </tbody>
+                </table>
+            </form>  
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- /About -->
+
+
+
+<!--footer-->
+<div class="footer">
+		<!-- container -->
+		<div class="container">
+			<div class="col-md-4 footer-right">
+                            <h3>NAVIGATION</h3>
+                            <div>
+				<ul>
+					<li><h2><a href="index.html">Home</a></h2></li>
+                                        <!--li><h2><a href="about.html">About SIGEC</a></h2></li-->
+					<li><h2><a href="contact.html">Contact</a></h2></li>
+				</ul>
+                            </div>
+                        </div>
+			<div class="col-md-4 footer-middle">
+				<h3>Endereço</h3>
+				<div class="address">
+					<p>Talatona - Angola
+						<span>Av. Luanda Sul, Rua Lat Via S10</span>
+					</p>
+				</div>
+				<div class="phone">
+					<p>+244935262640</p>
+				</div>
+			</div>
+			<div class="col-md-4 footer-right">
+				<h3>System Info</h3><br>
+				<p>Sistema de gestão de Conhecimentos,
+                                    <span>An Help Hand For Students !</span>
+                                </p>
+			</div>
+			<div class="clearfix"> </div>	  
+		</div>
+		<!-- //container -->
+	</div>
+<!--/footer-->
+<!--copy-rights-->
+<div class="copyright">
+		<!-- container -->
+		<div class="container">
+			<div class="copyright-left">
+			<p>© 2015 Sistema de gestão de Conhecimentos. All rights reserved | Design by <a href="http://www.isptec.co.ao/">Engº Informaticos</a></p>
+			</div>
+			<div class="copyright-right">
+				<ul>
+					<li><a href="http://www.twitter.com" class="twitter"> </a></li>
+					<li><a href="http://www.facebook.com" class="twitter facebook"> </a></li>
+					<li><a href="http://plus.google.com/+Chrome" class="twitter chrome"> </a></li>
+					<li><a href="http://www.pinterest.com" class="twitter pinterest"> </a></li>
+					<li><a href="http://www.linkedin.com" class="twitter linkedin"> </a></li>
+					<li><a href="http://www.dribble.com" class="twitter dribbble"> </a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+			
+		</div>
+		<!-- //container -->
+		<!---->
+<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!----> 
+	</div>
+<!--/copy-rights-->
+	</body>
+</html>
